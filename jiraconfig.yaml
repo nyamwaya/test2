@@ -8,5 +8,5 @@ metadata:
     github.com/project-slug: nyamwaya/test2
 spec:
   type: service
-  owner: user:<github-username>
+  owner: user:nyamwaya
   lifecycle: experimental
