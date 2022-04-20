@@ -1,12 +1,5 @@
-apiVersion: backstage.io/v1alpha1
-kind: Component
 metadata:
-  name: <github-repo>
-  title: Sample Service # optional, human readable component name
-  description: My first Backtstage catalog item.
   annotations:
-    github.com/project-slug: nyamwaya/test2
-spec:
-  type: service
-  owner: user:nyamwaya
-  lifecycle: experimental
+    jira/project-key: kis
+    jira/component: <example-component> # optional, you might skip value to fetch data for all components
+    jira/token-type: Bearer # optional, used for Activity stream feed. If you are using Basic auth you can skip this. 
