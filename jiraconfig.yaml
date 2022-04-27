@@ -1,13 +1,16 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: hi
-  description: My first Backtstage catalog item.
+  name: bcgdv-api-service
+  title: Bcgdv API Service
   annotations:
+    backstage.io/techdocs-ref: dir:.
     jira/project-key: KIS
-    jira/component: <example-component> # optional, you might skip this value to fetch data for all components
-    jira/token-type: Bearer # optional, used for Activity stream feed. If you are using Basic auth you can skip this.
+    
 spec:
   type: service
-  owner: user:nyamwaya
   lifecycle: experimental
+  owner: bcgdv
+  system: bcgdv
+  providesApis:
+    - bcgdv-api
